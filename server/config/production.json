@@ -10,13 +10,18 @@
   "InvalidToken": "Invalid token",
   "TokenMissing": "Invalid token or you are missing header token",
   "fileUpload": "File Uploaded",
+  "ApplicationDataUpdate": "Your data were saved",
   "error": "Something Went Wrong",
   "profileFields": "emailaddress1,firstname,middlename,lastname,suffix,birthdate,gendercode,mobilephone,telephone1,ses_messagingskype,ses_emergencycontactname,address1_country,address1_line1,address1_line2,address1_line3,address1_city,address1_stateorprovince,address1_postalcode,address2_country,address2_line1,address2_line2,address2_line3,address2_city,address2_stateorprovince,address2_postalcode",
   "conatctApplicationFields": "firstname,middlename,lastname,eslsca_arabicname,gendercode,governmentid,birthdate,ses_nationality,eslsca_dualnationality,emailaddress1,emailaddress2,mobilephone,address1_line1,address1_city,eslsca_cairodistrictbusiness,eslsca_cairodistrictresidential,address1_country,address1_postalcode,address2_line1,address2_city,address2_country,address2_postalcode",
   "programApplicationFields": "ses_certificationprogramid,ses_certificationprogramname",
+  "AcademicYearListFields": "ses_academicperiodid,ses_academicperiod",
   "campusApplicationFields": "ses_campusid,ses_campusname",
   "tracksApplicationFields": "ses_trackid,ses_track",
-  "ApplicantApplicationFields": "ses_birthcity,ses_birthcountry,_ses_certificationprogram_value,eslsca_applicantsourceother,eslsca_applicantsource,_ses_track_value,eslsca_transfer,eslsca_startingacademicyear,eslsca_transferfacultyorprogram,eslsca_startingsemesterundergraduate,eslsca_semesternumberfortransfer,eslsca_firstattendanceschedulechoice,eslsca_secondattendanceschedulechoice,eslsca_yearsofrelevantexperience,eslsca_campus",
-  "schoolsApplicationFields":"ses_previousschool,ses_city,ses_country,ses_graduationyear,eslsca_primaryteachinglanguage,eslsca_schoolcertificate,ses_certificateearned,ses_major,eslsca_businessdegree,eslsca_gpa,_ses_contactid_value",
-  "prevEmploymentAplicationFields":"ses_employer,ses_previousemployment,ses_startdate"
+  "selectClassFields": "ses_classid,_eslsca_europroduct_value,_ses_product_value,ses_class,ses_classstatus,ses_classcapacity,ses_grade,ses_enddate,ses_classname,_ses_term_value,_ses_schoolid_value,_ses_departmentid_value,_ses_campusid_value,ses_creditsavailable,ses_deliverymethod,_eslsca_attendanceoption_value,ses_startdate,_ses_courseid_value,_ses_facultyid_value",
+  "ApplicantApplicationFields": "ses_applicant,ses_applicantid,ses_birthcity,ses_birthcountry,_ses_certificationprogram_value,eslsca_applicantsourceother,eslsca_applicantsource,_eslsca_startingacademicyeargraduate_value,_eslsca_startingacademicyearundergraduate_value,_ses_track_value,eslsca_transfer,eslsca_transferfacultyorprogram,eslsca_startingsemesterundergraduate,eslsca_startingsemestergraduate,eslsca_semesternumberfortransfer,eslsca_applyforfinancialaid,eslsca_accepttermsanddonditions,eslsca_esignature,_eslsca_firstattendancescheduleoption_value,_eslsca_seconattendancescheduleoption_value,eslsca_yearsofrelevantexperience,_eslsca_campus_value,eslsca_applicationfee,ses_admissionfeepaid,ses_applicationfeepaiddate",
+  "schoolsApplicationFields": "ses_previousschool,ses_schoolcontact,ses_city,ses_country,ses_graduationyear,eslsca_primaryteachinglanguage,eslsca_schoolcertificate,ses_certificateearned,ses_major,eslsca_businessdegree,eslsca_gpa,_ses_contactid_value",
+  "prevEmploymentAplicationFields": "ses_employer,ses_previousemployment,ses_startdate",
+  "finanicalAidFields": "eslsca_scholarshiptype,eslsca_otherscholarship,eslsca_siblingateslsca,eslsca_siblingname,eslsca_siblinguniversityid",
+  "guardianFields": "firstname,middlename,lastname,birthdate,ses_nationality,address1_line1,address1_city,address1_country,address1_postalcode,emailaddress1,mobilephone"
 }
