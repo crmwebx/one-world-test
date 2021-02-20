@@ -1,0 +1,59 @@
+.main {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.leftContainer {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.mainContent {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+.phoneIcon {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+.IconText {
+  color: #fff;
+  margin-left: 4px;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: baseline;
+}
+.applyLink {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 12px;
+}
+.btnHero {
+  margin-left: 1rem;
+  background-color: #f9a134;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .leftContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rightContainer {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+}

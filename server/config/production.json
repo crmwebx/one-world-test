@@ -1,0 +1,22 @@
+{
+  "name": "oneworld-api production",
+  "App": "Application is listining at port ",
+  "dbConnectError": "error in connecting db",
+  "userExits": "User Already Exists,try login with your email Id",
+  "userNotFound": "User doesn't exists in our database",
+  "userRegister": "User Register",
+  "AuthKey": "secret",
+  "InvalidPassword": "Invalid Username or Password",
+  "InvalidToken": "Invalid token",
+  "TokenMissing": "Invalid token or you are missing header token",
+  "fileUpload": "File Uploaded",
+  "error": "Something Went Wrong",
+  "profileFields": "emailaddress1,firstname,middlename,lastname,suffix,birthdate,gendercode,mobilephone,telephone1,ses_messagingskype,ses_emergencycontactname,address1_country,address1_line1,address1_line2,address1_line3,address1_city,address1_stateorprovince,address1_postalcode,address2_country,address2_line1,address2_line2,address2_line3,address2_city,address2_stateorprovince,address2_postalcode",
+  "conatctApplicationFields": "firstname,middlename,lastname,eslsca_arabicname,gendercode,governmentid,birthdate,ses_nationality,eslsca_dualnationality,emailaddress1,emailaddress2,mobilephone,address1_line1,address1_city,eslsca_cairodistrictbusiness,eslsca_cairodistrictresidential,address1_country,address1_postalcode,address2_line1,address2_city,address2_country,address2_postalcode",
+  "programApplicationFields": "ses_certificationprogramid,ses_certificationprogramname",
+  "campusApplicationFields": "ses_campusid,ses_campusname",
+  "tracksApplicationFields": "ses_trackid,ses_track",
+  "ApplicantApplicationFields": "ses_birthcity,ses_birthcountry,_ses_certificationprogram_value,eslsca_applicantsourceother,eslsca_applicantsource,_ses_track_value,eslsca_transfer,eslsca_startingacademicyear,eslsca_transferfacultyorprogram,eslsca_startingsemesterundergraduate,eslsca_semesternumberfortransfer,eslsca_firstattendanceschedulechoice,eslsca_secondattendanceschedulechoice,eslsca_yearsofrelevantexperience,eslsca_campus",
+  "schoolsApplicationFields":"ses_previousschool,ses_city,ses_country,ses_graduationyear,eslsca_primaryteachinglanguage,eslsca_schoolcertificate,ses_certificateearned,ses_major,eslsca_businessdegree,eslsca_gpa,_ses_contactid_value",
+  "prevEmploymentAplicationFields":"ses_employer,ses_previousemployment,ses_startdate"
+}

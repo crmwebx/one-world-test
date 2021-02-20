@@ -1,0 +1,21 @@
+.mainConatiner {
+  box-shadow: 0px 0px 2px 0px rgb(201, 197, 201);
+  padding: 0 !important;
+  margin-bottom: 12px !important;
+}
+.conatinerWidth {
+  width: 31% !important;
+}
+
+.conatinerWidth2 {
+  width: 90% !important;
+}
+
+@media screen and (max-width: 600px) {
+  .conatinerWidth {
+    width: 100% !important;
+  }
+  .conatinerWidth2 {
+    width: 100% !important;
+  }
+}

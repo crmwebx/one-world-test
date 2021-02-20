@@ -1,0 +1,103 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title Enter Payment Details
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet')
+    link(href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' rel='stylesheet')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    style.
+      body {
+      background: #f5f5f5
+      }
+      .rounded {
+      border-radius: 1rem
+      }
+      .nav-pills .nav-link {
+      color: #555
+      }
+      .nav-pills .nav-link.active {
+      color: white
+      }
+      input[type="radio"] {
+      margin-right: 5px
+      }
+      .bold {
+      font-weight: bold
+      }
+  body
+    .container.py-5
+      // For demo purpose
+      .row.mb-4
+        .col-lg-8.mx-auto.text-center
+          h1.display-4 Enter Payment Details
+      // End
+      .row
+        .col-lg-6.mx-auto
+          .card
+            .card-header
+              // Credit card form content
+              .tab-content
+                // credit card info
+                #credit-card.tab-pane.fade.show.active.pt-3
+                  form(role='form' method="post" action=`https://oneworldwebappcontainer.azurewebsites.net/api/application/payment-request/vapulus`)
+                    .form-group
+                      label(for='username')
+                        h6 Card Owner
+                      input.form-control(type='text' name='username' placeholder='Card Owner Name' required='')
+                    .form-group
+                      label(for='cardNumber')
+                        h6 Card number
+                      .input-group
+                        input.form-control(type='number' name='cardNumber' placeholder='Valid card number' required='')
+                        .input-group-append
+                          span.input-group-text.text-muted
+                            i.fab.fa-cc-visa.mx-1
+                            i.fab.fa-cc-mastercard.mx-1
+                            i.fab.fa-cc-amex.mx-1
+                    .row
+                      .col-sm-8
+                        .form-group
+                          label
+                            span.hidden-xs
+                              h6 Expiration Date
+                          .input-group
+                            input.form-control(type='number' name=`month` placeholder='MM'  required='' maxlength='2')
+                            input.form-control(type='number' name=`year` placeholder='YY'  required='' maxlength='2')
+                          .input-group
+                            input.form-control(type='hidden' name=`mobile` value=`${mobile}`)
+                            input.form-control(type='hidden' name=`email` value=`${email}`)
+                            input.form-control(type='hidden' name=`amount` value=`${amount}`)
+                      .col-sm-4
+                        .form-group.mb-4
+                          label(data-toggle='tooltip' title='Three digit CV code on the back of your card')
+                            h6
+                              | CVV 
+                              i.fa.fa-question-circle.d-inline
+                          input.form-control(type='number' name=`cvv` required='')
+                    .card-footer
+                      input.subscribe.btn.btn-primary.btn-block.shadow-sm(type='submit' value=`Confirm EUR ${amount} Payment` )
+              // End
+              // Paypal inf
+              // End
+              // bank transfer info
+              // End
+              // End
+    script.
+      function onHandleSubmit(e) {
+         e.preventDefault();
+          console.log("demo");
+          var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+              console.log("res from API",this.responseText);
+              //-  window.location.replace("https://www.w3schools.com");
+              }
+              
+            };
+        xhttp.open("POST", "http://localhost:3001/api/application/payment-request/vapulus", true);
+        xhttp.send();
+      }

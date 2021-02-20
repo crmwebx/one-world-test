@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="ESLSCA Portal" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- <script src="https://api.vapulus.com:1338/app/session/script?appId=438aba96-e750-4340-b159-9d4e4ec49884"/></script> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <script type="text/javascript">
+      if(window.PaymentSession){
+          PaymentSession.configure({
+              fields: {
+                  // ATTACH HOSTED FIELDS IDS TO YOUR PAYMENT PAGE FOR A CREDIT CARD
+                  card: {
+                    cardNumber: "cardNumber",
+                            securityCode: "cardCVC",
+                            expiryMonth: "cardMonth",
+                            expiryYear: "cardYear"
+                  }
+              },
+              callbacks: {
+                  initialized: function (err, response) {
+                      console.log("init....");
+                      console.log(err, response);
+                      console.log("/init.....");
+                      // HANDLE INITIALIZATION RESPONSE
+                  },
+                  formSessionUpdate: function (err,response) {
+                      console.log("update callback.....");
+                      console.log(err,response);
+                      console.log("/update callback....");
+
+                      // HANDLE RESPONSE FOR UPDATE SESSION
+                      if (response.statusCode) {
+                          if (200 == response.statusCode) {
+                              console.log("Session updated with data: " + response.data.sessionId);
+                          } else if (201 == response.statusCode) {
+                              console.log("Session update failed with field errors.");
+
+                              if (response.message) {
+                                  var field = response.message.indexOf('valid')
+                                  field = response.message.slice(field + 5, response.message.length);
+                                  console.log(field + " is invalid or missing.");
+                              }
+                          } else {
+                              console.log("Session update failed: " + response);
+                          }
+                      }
+                  }
+              }
+          });
+      }else{
+          alert('Fail to get app/session/script !\n\nPlease check if your appId added in session script tag in head section?')
+      }
+
+      function pay() {
+          // UPDATE THE SESSION WITH THE INPUT FROM HOSTED FIELDS
+          console.log("pay method call");
+          PaymentSession.updateSessionFromForm();
+      }
+  </script> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>ESLSCA Portal</title>
+    <style id="antiClickjack">
+      body {
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
