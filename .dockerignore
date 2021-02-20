@@ -1,0 +1,147 @@
+#client
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/client/node_modules
+/client/.vscode
+/client/.pnp
+/client.pnp.js
+
+# testing
+/client/coverage
+
+# production
+/client/build
+
+# misc
+/client/.DS_Store
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+
+/client/npm-debug.log*
+/client/yarn-debug.log*
+/client/yarn-error.log*
+
+
+
+
+
+# server
+
+############################
+# OS X
+############################
+
+/server/*.DS_Store
+/server/*.AppleDouble
+/server/*.LSOverride
+/server/Icon
+/server/.Spotlight-V100
+/server/.Trashes
+/server/._*
+
+
+############################
+# Linux
+############################
+
+*~
+
+
+############################
+# Windows
+############################
+
+/server/Thumbs.db
+/server/ehthumbs.db
+/server/Desktop.ini
+/server/$RECYCLE.BIN/
+/server/*.cab
+/server/*.msi
+/server/*.msm
+/server/*.msp
+
+
+############################
+# Packages
+############################
+
+*.7z
+*.csv
+*.dat
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.seed
+*.so
+*.swo
+*.swp
+*.swn
+*.swm
+*.out
+*.pid
+
+
+############################
+# Logs and databases
+############################
+
+/server/.tmp
+/server/*.log
+/server/*.sql
+/server/*.sqlite
+/server/*.sqlite3
+
+
+############################
+# Misc.
+############################
+
+/server/*#
+/server/ssl
+/server/.idea
+/server/nbproject
+/server/public/uploads/*
+/server/!public/uploads/.gitkeep
+
+############################
+# Node.js
+############################
+
+/server/lib-cov
+/server/lcov.info
+/server/pids
+/server/logs
+/server/results
+/server/node_modules
+/server/.node_history
+
+
+############################
+# Tests
+############################
+
+/server/testApp
+/server/coverage
+
+############################
+# Strapi
+############################
+
+/server/.env
+/server/exports
+/server/.cache
+/server/build
+
